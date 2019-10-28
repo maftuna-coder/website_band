@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Timeline</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style media="screen">
+        h1 {
+            font-family: helvetica;
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bar black_color">
+        <a href="#home" class="button bar-item">Home</a>
+        <a href="#band" class="button bar-item">Band</a>
+        <a href="#members" class="button bar-item">Members</a>
+        <a href="#contact" class="button bar-item">Contact</a>
+    </nav>
+
+    <!-- Slide Show -->
+    <section id="home">
+        <img class="mySlides" src="./img/LP1.jpg" style="width:100%">
+        <img class="mySlides" src="./img/LP2.jpg" style="width:100%">
+        <img class="mySlides" src="./img/LP3.jpg" style="width:100%">
+    </section>
+
+    <!-- Band Description -->
+    <section class="container center content" style="max-width:600px" id="band">
+        <h2 class="wide">Linkin Park</h2>
+        <p class="opacity"><i>The best brand</i></p>
+        <p class="justify">Linkin Park is an American rock band from Agoura Hills, California. The band's current lineup
+            comprises vocalist/keyboardist/rhythm guitarist Mike Shinoda, lead guitarist Brad Delson, bassist Dave
+            Farrell, DJ/keyboardist Joe Hahn, and drummer Rob Bourdon, all of whom are founding members. Vocalists Mark
+            Wakefield and Chester Bennington and bassist Kyle Christner are former members of the band.</p>
+    </section>
+
+    <!-- Band Members -->
+    <section class="row-padding center light-grey" id="members">
+        <article class="third">
+            <p><b>Chester Bennington</b></p>
+            <img src="./img/chester-bennington.jpg" alt="Chester" style="width:100%; height: 350px;">
+            <p>Chester Charles Bennington (March 20, 1976 – July 20, 2017) was an American singer, songwriter, musician,
+                and actor. </p>
+        </article>
+        <article class="third">
+            <p><b>Mike Shinoda</b></p>
+            <img src="./img/Mike.jpg" alt="Mike" style="width:100%; height: 350px;">
+            <p>Michael Kenji Shinoda (/ʃɪˈnoʊdə/, born February 11, 1977) is an American musician, singer, songwriter,
+                rapper, record producer, and graphic designer.</p>
+        </article>
+        <article class="third">
+            <p><b>Rob Bourdon</b></p>
+            <img src="./img/Bourdon.jpg" alt="Bourdon" style="width:100%; height: 350px;">
+            <p>Robert Gregory Bourdon (born January 20, 1979) is an American musician, best known as the drummer and
+                founding member of the American rock band Linkin Park.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container padding-64 center black_color xlarge" id="contact">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="medium">
+            Done by <a href="" target="_blank">Maftuna</a>
+        </p>
+        <p id="date"></p>
+    </footer>
+
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <script src="smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
+</body>
+</html>
